@@ -1,26 +1,41 @@
 <x-layout>
-    <section>
-        <h3 class="mb-6">Top Jobs</h3>
+    <div class="space-y-10">
+        <section>
+            <x-section-heading>Featured Jobs</x-section-heading>
+            <div class="grid lg:grid-cols-3 gap-8 mt-6">
+                <x-job-card/>
+                <x-job-card/>
+                <x-job-card/>
+            </div>
+        </section>
 
-        <div class="p-4 bg-white/5 rounded-xl flex flex-col text-center">
+        <section>
+            <x-section-heading>Tags</x-section-heading>
+            <div class="mt-6 space-x-1">
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+                <x-tag>Tag</x-tag>
+            </div>
+        </section>
 
-            <div class="self-start text-sm">Laracasts</div>
+        <section>
+            <x-section-heading>Recent Jobs</x-section-heading>
+            <div class="mt-6 space-y-6">
+                <x-job-card-wide/>
+                <x-job-card-wide/>
+                <x-job-card-wide/>
+                <x-job-card-wide/>
 
-            <div class="py-8 fon-bold ">
-                <h3>Video Producer</h3>
-                <p>Full Time - From $60,000</p>
             </div>
 
-            <div class="flex justify-between items-center mt-auto">
-                <div>
-                    <a href="">Tag</a>
-                    <a href="">Tag</a>
-                    <a href="">Tag</a>
-                </div>
+        </section>
 
-                <img src="https://placehold.co/42" alt="">
-            </div>
-
-        </div>
-    </section>
+    </div>
 </x-layout>

@@ -21,12 +21,12 @@
                 <a href="#">Salaries</a>
                 <a href="#">Companies</a>
             </div>
-            <div class="mt-10 max-w-[986px]">
+            <div>
                 <a href="">Post a Job</a>
             </div>
         </nav>
 
-        <main>{{ $slot }}</main>
+        <main class="mt-10 max-w-[986px] mx-auto">{{ $slot }}</main>
 
     </div>
 
