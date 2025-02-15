@@ -9,10 +9,13 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                "hanken-grotesk": ['Hanken Grotesk', ...defaultTheme.fontFamily.sans],
             },
-            colors:{
-                "black":"#060606"
+            fontSize: {
+                "2xs": ".625rem" //10px
+            },
+            colors: {
+                "black": "#060606"
             }
         },
     },
